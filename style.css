@@ -1,8 +1,19 @@
-.nakd-grid {
+.nakd-grid,
+.nakd-campaign {
   font-family: 'proxima-nova', 'Noto sans', sans-serif;
   font-size: 10px;
   line-height: 1;
   text-align: center;
+  position: relative;
+}
+.nakd-grid-hero-inner,
+.nakd-campaign-inner {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 100vw;
 }
 .nakd-grid img,
 .nakd-grid video,
@@ -82,12 +93,6 @@
      object-fit: cover;
 }
 .nakd-grid-hero-inner {
-  position: absolute;
-  left: 50%;
-  top: 0;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  width: 100vw;
   height: 100%;
   overflow: hidden;
 }
@@ -297,4 +302,32 @@
   top: 0;
   width: 100%;
   height: 100%;
+}
+.nakd-campaign-image-wrap {
+  position: absolute;
+}
+.nakd-campaign-hotspot {
+  position: absolute;
+  display: block;
+}
+.nakd-campaign-product-group {
+  position: absolute;
+}
+.nakd-campaign-product {
+  font-size: 0.703125vw;
+  line-height: 1.7;
+}
+.nakd-campaign-mobile .nakd-campaign-product {
+  font-size: 1.866666666666667vw;
+  line-height: 1.5;
+}
+.nakd-campaign-product + .nakd-campaign-product {
+  margin-top: 0.711111111111111em;
+}
+.nakd-campaign-product span {
+  display: block;
+}
+.nakd-campaign-shopnow {
+  font-weight: 700;
+  text-transform: uppercase;
 }

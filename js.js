@@ -4,7 +4,7 @@
 
     script.setAttribute('async', '');
     script.setAttribute('src', url);
-    script.onLoad = callback;
+    script.onload = callback;
 
     document.body.appendChild(script);
   }
@@ -279,4 +279,46 @@
       }
     });
   })();
+
+  // Fade in on scroll
+  // (function() {
+  //   var className = 'nakd-animation-scrollReveal';
+  //   var interval;
+  //   var elementsData = [];
+  //
+  //   function handleIntersection(entries) {
+  //     entries.forEach(function (entry) {
+  //       var elementData = elementsData[Number(entry.target.dataset.nakdIndex)];
+  //
+  //       if (entry.intersectionRatio >= .2) {
+  //         if (!elementData.active) {
+  //           elementData.active = true;
+  //           elementData.element.classList.add(className + '-active', className + '-activated');
+  //         }
+  //       } else {
+  //         if (elementData.active) {
+  //           elementData.active = false;
+  //           elementData.element.classList.remove(className + '-active');
+  //         }
+  //       }
+  //     });
+  //   }
+  //
+  //   loadScript('https://www.na-kd.com/globalassets/js/intersection-observer.js?ref=27482E4616', function () {
+  //     var observer = new IntersectionObserver(handleIntersection, {
+  //       threshold: [0, .2],
+  //       root: document.querySelector('.nakd-grid'),
+  //     });
+  //
+  //     document.querySelectorAll('.' + className).forEach(function (element, index) {
+  //       elementsData.push({
+  //         element: element,
+  //       });
+  //
+  //       element.dataset.nakdIndex = index;
+  //
+  //       observer.observe(element);
+  //     });
+  //   });
+  // })();
 })();

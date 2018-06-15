@@ -25,11 +25,22 @@ $color-white = #fff
 
 $margin-row = $em(10)
 
-.nakd-grid
+$nakd-grid
   font-family 'proxima-nova', 'Noto sans', sans-serif
   font-size 10px
   line-height 1
   text-align center
+  position relative
+
+$full-width
+  position absolute
+  left 50%
+  top 0
+  transform translateX(-50%)
+  width 100vw
+
+.nakd-grid
+  @extend $nakd-grid
 
   +$media()
     max-width 100%
@@ -92,11 +103,8 @@ $margin-row = $em(10)
     object-fit cover
 
 .nakd-grid-hero-inner
-  position absolute
-  left 50%
-  top 0
-  transform translateX(-50%)
-  width 100vw
+  @extend $full-width
+
   height 100%
   overflow hidden
 
@@ -288,3 +296,37 @@ $margin-row = $em(10)
   top 0
   width 100%
   height 100%
+
+.nakd-campaign
+  @extend $nakd-grid
+
+.nakd-campaign-inner
+  @extend $full-width
+
+.nakd-campaign-image-wrap
+  position absolute
+
+.nakd-campaign-hotspot
+  position absolute
+  display block
+
+.nakd-campaign-product-group
+  position absolute
+
+.nakd-campaign-product
+  font-size $vw(13.5)
+  line-height 1.7
+
+  .nakd-campaign-mobile &
+    font-size $vw(7, 3.75)
+    line-height 1.5
+
+  & + &
+    margin-top $em(9.6, 13.5)
+
+  span
+    display block
+
+.nakd-campaign-shopnow
+  font-weight 700
+  text-transform uppercase
