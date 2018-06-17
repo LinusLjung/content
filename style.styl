@@ -310,7 +310,11 @@ $full-width
 
 .nakd-campaign-hotspot
   position absolute
-  display block
+
+  a
+    display block
+    width 100%
+    height 100%
 
 .nakd-campaign-product-group
   position absolute
@@ -318,6 +322,9 @@ $full-width
 .nakd-campaign-product
   font-size $vw(13.5)
   line-height 1.7
+
+  +$theme-light()
+    color $color-white
 
   .nakd-campaign-mobile &
     font-size $vw(7, 3.75)

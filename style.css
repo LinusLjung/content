@@ -311,7 +311,11 @@
 }
 .nakd-campaign-hotspot {
   position: absolute;
+}
+.nakd-campaign-hotspot a {
   display: block;
+  width: 100%;
+  height: 100%;
 }
 .nakd-campaign-product-group {
   position: absolute;
@@ -319,6 +323,10 @@
 .nakd-campaign-product {
   font-size: 0.703125vw;
   line-height: 1.7;
+}
+.nakd-campaign-product.theme-light,
+.theme-light .nakd-campaign-product {
+  color: #fff;
 }
 .nakd-campaign-mobile .nakd-campaign-product {
   font-size: 1.866666666666667vw;
