@@ -25,19 +25,17 @@
 .nakd-grid video {
   width: 100%;
 }
-.nakd-grid .nakd-grid-hero img,
-.nakd-grid .nakd-grid-hero video,
-.nakd-grid .nakd-grid-hero iframe {
-  width: 100%;
-}
+.nakd-grid .nakd-grid-hero,
 .nakd-grid a:-webkit-any-link {
   color: inherit;
   text-decoration: none;
 }
+.nakd-grid .nakd-grid-hero,
 .nakd-grid a:-moz-any-link {
   color: inherit;
   text-decoration: none;
 }
+.nakd-grid .nakd-grid-hero,
 .nakd-grid a:any-link {
   color: inherit;
   text-decoration: none;
@@ -83,6 +81,11 @@
 .nakd-grid-hero {
   font-size: 0.520833333333333vw;
   height: 41.66666666666667vw;
+}
+.nakd-grid-hero img,
+.nakd-grid-hero video,
+.nakd-grid-hero iframe {
+  width: 100%;
 }
 .nakd-grid-hero > span > img:first-child,
 .nakd-grid-hero > span > video:first-child,
@@ -170,7 +173,7 @@
   left: unset;
   right: 3.8%;
 }
-.nakd-grid-copy-logo {
+.nakd-grid .nakd-grid-copy-logo {
   width: 30em;
 }
 .nakd-grid-copy-text-1,
@@ -210,15 +213,15 @@
   background-color: transparent;
 }
 .nakd-grid-cta.nakd-grid-cta-solid {
-  background-color: #0c1214;
-  color: #fff;
-  border-color: #0c1214;
-}
-.nakd-grid-cta.nakd-grid-cta-solid.theme-light,
-.theme-light .nakd-grid-cta.nakd-grid-cta-solid {
   background-color: #fff;
   color: #0c1214;
   border-color: #fff;
+}
+.nakd-grid-cta.nakd-grid-cta-solid.theme-dark,
+.theme-dark .nakd-grid-cta.nakd-grid-cta-solid {
+  background-color: #0c1214;
+  color: #fff;
+  border-color: #0c1214;
 }
 .nakd-grid-mobile .nakd-grid-cta {
   font-size: 1.8em;

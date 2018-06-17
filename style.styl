@@ -51,8 +51,6 @@ $full-width
     width 100%
 
   .nakd-grid-hero
-    +$media()
-      width 100%
 
   a:any-link
     color inherit
@@ -94,6 +92,9 @@ $full-width
 .nakd-grid-hero
   font-size $vw(10)
   height $vw(800)
+
+  +$media()
+    width 100%
 
   > span > img:first-child
   > span > video:first-child
@@ -164,7 +165,8 @@ $full-width
   right 3.8%
 
 .nakd-grid-copy-logo
-  width 30em
+  .nakd-grid &
+    width 30em
 
 .nakd-grid-copy-text-1
 .nakd-grid-copy-text-2
@@ -202,13 +204,13 @@ $full-width
   background-color transparent
 
   &.nakd-grid-cta-solid
-    background-color $color-black
-    color $color-white
+    background-color $color-white
+    color $color-black
     border-color @background-color
 
-    +$theme-light()
-      background-color $color-white
-      color $color-black
+    +$theme-dark()
+      background-color $color-black
+      color $color-white
       border-color @background-color
 
   .nakd-grid-mobile & {
