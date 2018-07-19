@@ -211,6 +211,7 @@
   padding: 0.593220338983051em 1.186440677966102em;
   border: 1px solid;
   background-color: transparent;
+  pointer-events: auto;
 }
 .nakd-grid-cta.nakd-grid-cta-solid {
   background-color: #fff;
