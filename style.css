@@ -326,6 +326,7 @@
 .nakd-campaign-product {
   font-size: 0.703125vw;
   line-height: 1.7;
+  text-align: left;
 }
 .nakd-campaign-product.theme-light,
 .theme-light .nakd-campaign-product {
