@@ -4,9 +4,8 @@
   "description": "",
   "main": "js.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "stylus": "stylus --use ./node_modules/poststylus --with \"['autoprefixer']\" style.styl -o style.css",
-    "stylus:watch": "stylus --use ./node_modules/poststylus --with \"['autoprefixer']\" -w style.styl -o style.css"
+    "stylus": "stylus --use ./node_modules/poststylus --with \"['autoprefixer']\" style.styl -o dist/style.css",
+    "stylus:watch": "stylus --use ./node_modules/poststylus --with \"['autoprefixer']\" -w style.styl -o dist/style.css"
   },
   "author": "",
   "license": "ISC",
