@@ -212,6 +212,9 @@
   border: 1px solid;
   background-color: transparent;
 }
+.nakd-grid-cta.nakd-grid-cta-interactable {
+  pointer-events: auto;
+}
 .nakd-grid-cta.nakd-grid-cta-solid {
   background-color: #fff;
   color: #0c1214;
@@ -323,6 +326,7 @@
 .nakd-campaign-product {
   font-size: 0.703125vw;
   line-height: 1.7;
+  text-align: left;
 }
 .nakd-campaign-product.theme-light,
 .theme-light .nakd-campaign-product {
