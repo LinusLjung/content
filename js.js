@@ -179,6 +179,7 @@
   // Youtube embedder
   (function () {
     var youtubeElements = document.querySelectorAll('[data-nakd-youtube-id]');
+    var players = window.nakdYoutubePlayers = window.nakdYoutubePlayers || {};
 
     if (!youtubeElements.length) {
       return;
@@ -200,7 +201,7 @@
             element.id = 'nakd-grid-youtube-' + counter++;
           }
 
-          new YT.Player(element.id, {
+          players[element.id] = new YT.Player(element.id, {
             videoId: dataset.nakdYoutubeId, // YouTube Video ID
             width: '100%', // Player width (in px)
             height: '100%', // Player height (in px)
